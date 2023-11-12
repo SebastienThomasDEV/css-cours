@@ -1,0 +1,36 @@
+/* Directives d'importation CSS */
+/* Documentation -> https://developer.mozilla.org/fr/docs/Web/CSS/@import */
+/* L'importation permet d'importer un fichier CSS dans un autre fichier CSS */
+
+@import 'header.css';
+@import 'main.css';
+
+/* Sélecteur universel */
+/* Documentation -> https://developer.mozilla.org/fr/docs/Web/CSS/Universal_selectors */
+/* Ce sélecteur permet de sélectionner tous les éléments HTML de la page */
+
+* {
+    margin: 0; /* Annule les marges extérieures */
+    padding: 0; /* Annule les marges intérieures */
+    box-sizing: border-box; /* Permet de prendre en compte les marges intérieures et extérieures dans le calcul de la largeur et de la hauteur */
+    list-style-type: none; /* Annule l'ajout des puces sur les listes */
+    text-decoration: none; /* Annule les décorations de texte par défaut */
+    font-family: 'Poppins', sans-serif; /* Définit la police de caractère */
+    color: inherit; /* Définit la couleur de police de l'élément */
+}
+
+/* Sélecteur d'élément */
+/* Documentation -> https://developer.mozilla.org/fr/docs/Web/CSS/Type_selectors */
+/* Ce sélecteur permet de sélectionner tous les éléments HTML de ce type */
+body {
+    min-height: 100vh; /* Définit la hauteur minimale de l'élément */
+    min-width: 100vw; /* Définit la largeur minimale de l'élément */
+    background-color: white; /* Définit la couleur de fond de l'élément */
+}
+
+h1 {
+    opacity: 0; /* Définit l'opacité de l'élément */
+    position: absolute; /* Définit le positionnement de l'élément par rapport à son parent */
+}
+
+

@@ -1,0 +1,99 @@
+#header {
+    display: flex;
+    position: fixed; /* Définit le positionnement de l'élément */
+    top: 0; /* Définit la position de l'élément par rapport au haut */
+    left: 0; /* Définit la position de l'élément par rapport à la gauche */
+    width: 100%; /* Définit la largeur de l'élément */
+    height: 6rem; /* Définit la hauteur de l'élément avec une unité de mesure relative à la taille du viewport */
+    background-color: white; /* Définit la couleur de fond de l'élément */
+    z-index: 1000; /* Définit la priorité d'affichage de l'élément par rapport aux autres éléments */
+    transition: 0.5s; /* Définit la durée de transition entre les états de l'élément */
+    justify-content: space-between; /* Définit l'alignement horizontal des éléments */
+    align-items: center; /* Définit l'alignement vertical des éléments */
+    padding-inline: 4em; /* Définit la marge intérieure horizontale de l'élément */
+}
+
+
+/* Sélecteur d'élément avec un combinateur descendant */
+/* Documentation -> https://developer.mozilla.org/fr/docs/Web/CSS/Descendant_combinator */
+/* Ce sélecteur permet de sélectionner tous les éléments HTML de ce type qui sont descendants d'un autre élément HTML */
+#header div img {
+    max-width: 10rem; /* Définit la largeur de l'élément */
+}
+
+#header div nav ul {
+    gap: 2em;
+    display: flex;
+    padding-inline: 4em;
+    align-items: center; /* Définit l'alignement vertical des éléments */
+}
+
+#header div nav ul li {
+    white-space: nowrap;
+    font-size: 1.2rem; /* Définit la taille de police de l'élément */
+    font-weight: 800; /* Définit le graisse de police de l'élément */
+    color: #000; /* Définit la couleur de police de l'élément */
+    transition: 0.5s; /* Définit la durée de transition entre les états de l'élément */
+}
+
+#header #nav_container {
+    display: flex; /* Définit le type d'affichage de l'élément */
+    align-items: center; /* Définit l'alignement vertical des éléments */
+}
+
+/* Sélecteur d'élément par classe */
+/* Documentation -> https://developer.mozilla.org/fr/docs/Web/CSS/Class_selectors */
+/* Ce sélecteur permet de sélectionner tous les éléments HTML qui possèdent cette classe */
+.nav_btn {
+    border: 3px solid #000; /* Définit la bordure de l'élément */
+    padding-inline: 0.8em; /* Définit la marge intérieure horizontale de l'élément */
+    padding-block: 0.3em; /* Définit la marge intérieure verticale de l'élément */
+    border-radius: 0.5em; /* Définit le rayon de la bordure de l'élément */
+    font-size: 1rem; /* Définit la taille de police de l'élément */
+    font-weight: 800; /* Définit le graisse de police de l'élément */
+    width: 100%; /* Définit la largeur de l'élément par rapport à son parent */
+    white-space: nowrap; /* Définit le comportement de l'élément lorsqu'il y a un débordement de texte */
+}
+
+#login_btn {
+    background-color: black;
+    color: white;
+    box-shadow: 4px 5px 5px grey;
+}
+
+#btn_container {
+    gap: 0.5em;
+    display: flex;
+}
+
+#burger_icon {
+    display: none; /* Définit le type d'affichage de l'élément */
+    cursor: pointer; /* Définit le curseur de l'élément */
+    max-height: 2.2em; /* Définit la largeur de l'élément */
+}
+
+#burger_toggle {
+    display: none; /* Définit le type d'affichage de l'élément */
+}
+
+/* Média-queries */
+/* Documentation -> https://developer.mozilla.org/fr/docs/Web/CSS/Media_Queries/Using_media_queries */
+/* Les média-queries permettent de définir des règles CSS qui ne s'appliquent que dans certaines conditions */
+/* Ici, on définit des règles CSS qui ne s'appliquent que lorsque la largeur du viewport est inférieure à 900px */
+@media screen and (max-width: 900px) {
+    #header div nav {
+        display: none; /* Définit le type d'affichage de l'élément après que la largeur du viewport soit inférieure à 900px */
+    }
+
+    #btn_container {
+        display: none;
+    }
+
+    #burger_icon {
+        display: block;
+    }
+
+}
+
+
+

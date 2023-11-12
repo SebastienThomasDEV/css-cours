@@ -1,0 +1,80 @@
+#main_container {
+    display: flex;
+    gap: 2em;
+    margin-top: 8rem;
+    width: 100%;
+    height: 100%;
+    padding-inline: 2em;
+}
+
+#main_container > section {
+    width: 100%;
+    height: 100%;
+}
+
+#main_container > section > img {
+    width: 100%;
+    height: 100%;
+    padding-inline: 4em;
+    object-fit: cover;
+    object-position: center;
+}
+
+#paragraph {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-block: 2em;
+    padding-inline: 2em;
+    white-space: nowrap;
+}
+#paragraph > h2  {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-inline: 0.7rem;
+}
+
+#paragraph > h2 > span {
+    color: #F76A1F;
+}
+
+#paragraph > p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: grey;
+    padding-inline: 0.7rem;
+}
+#learn_btn {
+    background-color: black;
+    color: white;
+    box-shadow: 4px 5px 5px grey;
+    padding: 0.7rem;
+    margin: 0.7rem;
+    width: fit-content;
+}
+@media screen and (max-width: 900px) {
+    #main_container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    #main_container > section > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #paragraph {
+        padding-inline: 0;
+        padding-block: 0;
+    }
+
+    #main_container > section > img {
+        padding-inline: 3em;
+    }
+
+
+
+}
